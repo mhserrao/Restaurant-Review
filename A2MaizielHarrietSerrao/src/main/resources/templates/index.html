@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" media="all" th:href="@{/css/styles.css}"></link>
+</head>
+<body>
+<h2 th:class="title">ALL REVIEWS</h2>
+<a th:href="@{/add}" th:class="addButton" th:id="but">ADD A REVIEW</a>
+	<table>
+		<tr>
+			<th>ID</th>
+			<th>Restaurant Name</th>
+			<th>Review</th>
+			<th>Date Of Visit</th>
+			<th>Rating</th>
+			<th>City</th>
+			<th>Review Date</th>
+			<th>Review Time</th>
+		</tr>
+		<tr th:each="r : ${reviews}">
+			<td th:text="${r.id}" width="4%"></td>
+			<td th:text="${r.restaurantName}" width="20%"></td>
+			<td th:text="${r.review}" th:class="review" width="39%"></td>
+			<td th:text="${r.dateOfVisit}" width="9%"></td>
+			<td th:text="${r.rating}" width="3%"></td>
+			<td th:text="${r.city}" width="10%"></td>
+			<td th:text="${r.reviewDate}" width="9%"></td>
+			<td th:text="${r.reviewTime}" width="6%"></td>
+		</tr>
+	</table>
+	<br><br>
+</body>
+</html>

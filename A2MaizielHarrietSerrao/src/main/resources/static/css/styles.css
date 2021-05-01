@@ -1,0 +1,117 @@
+@charset "ISO-8859-1";
+
+body {
+	background-color: #cce6ff;
+	color: black;
+	font-family: verdana;
+	font-size: 25px;
+	text-align: center;
+	padding: 0 5px 5px;
+}
+
+label, input[type=text], select {
+	display: inline-block;
+}
+
+label {
+	width: 22%;
+	text-align: right;
+	margin: 0 3% 0 0;
+}
+
+input {
+	font-size: 20px;
+	margin-bottom: 0.6em;
+}
+
+input[type=text] {
+	width: 70%;
+}
+
+textarea {
+	width: 70%;
+	font-size: 20px;
+	font-family: verdana;
+}
+
+table {
+	position: absolute;
+	text-align: center;
+	padding: 15px;
+	border-collapse: collapse;
+	background-color: #dddddd;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	color: black;
+	font-size: 15px;
+	margin-bottom: 30px;
+}
+
+th {
+	background-color: #555555;
+	color: white;
+}
+
+table, th, td {
+	border: 3px solid black;
+	padding: 5px;
+}
+
+.add {
+	text-align: center;
+}
+
+.outerDiv {
+	width: 58%;
+	margin-left: 21%;
+	margin-right: 21%;
+	padding: 10px;
+	border: 3px black solid;
+	border-radius: 5px;
+	background-color: #dddddd;
+	font-size: 20px;
+	text-align: left;
+}
+
+.review{
+	text-align:left;
+}
+
+.reviewlbl {
+	vertical-align: top;
+}
+
+.title {
+	font-size: 40px;
+	font-family: "verdana";
+	text-align: center;
+	font-weight: bold;
+	background-color: orange;
+	color: black;
+	padding: 10px;
+	display: block;
+}
+
+.addButton {
+	background-color: #555555;
+	padding: 5px;
+	border-style: solid;
+	border-color: black;
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	margin: 10px;
+	font-weight: bold;
+	display: inline-block;
+	border-radius: 5px;
+}
+
+.addButton:hover {
+	border-color: black;
+	background-color: #333333;
+}
+
+#but {
+	margin-bottom: 50px;
+}
